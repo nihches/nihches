@@ -1,31 +1,36 @@
 <script setup>
-  import iScale from '../assets/scale.png'
-  import iBook from '../assets/book.jpg'
-  import iDice from '../assets/dice.jpg'
+import iScale from '../assets/scale.png'
+import iBook from '../assets/book.jpg'
+import iDice from '../assets/dice.jpg'
 
-  import { RouterLink } from 'vue-router'
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-    <div class="topBtns">
-        <div class="topButton" ><RouterLink to="/know" ><img class="icn_topNav" :src="iScale"/></RouterLink></div>
-        <div class="topButton"><RouterLink to="/know" ><img class="icn_topNav" :src="iBook"/></RouterLink></div>
-        <div class="topButton"><RouterLink to="/dime" ><img class="icn_topNav" :src="iDice"/></RouterLink></div>
+  <div class="topBtns">
+    <div class="topButton">
+      <RouterLink to="/knowIT"><img class="icn_topNav" :src="iScale" /></RouterLink>
     </div>
+    <div class="topButton">
+      <RouterLink to="/knowIT"><img class="icn_topNav" :src="iBook" /></RouterLink>
+    </div>
+    <div class="topButton">
+      <RouterLink to="/dimeGame"><img class="icn_topNav" :src="iDice" /></RouterLink>
+    </div>
+  </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style scoped>
-.topBtns{
+.topBtns {
   position: absolute;
   right: 1em;
   display: flex;
   flex-direction: row;
   padding-top: 0.5em;
 }
-.topButton{
+.topButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,11 +43,11 @@
   border-radius: 10em;
   font-size: 1.5em;
 }
-.topButton:hover{
+.topButton:hover {
   background-image: linear-gradient(to top right, rgb(209, 209, 209), rgb(186, 238, 184));
   box-shadow: 0vh -0.3vh 0.5vh rgb(29, 29, 29);
 }
-.icn_topNav{
+.icn_topNav {
   width: 2.3em;
   border-radius: 3em;
 }
